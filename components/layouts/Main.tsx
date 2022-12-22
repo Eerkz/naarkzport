@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import MessageIcon from "../utils/MessageIcon";
 
 export default function Main({ children }: { children: React.ReactNode }) {
   return (
@@ -19,6 +20,7 @@ export default function Main({ children }: { children: React.ReactNode }) {
         height={256}
         className="absolute bottom-0 left-[-42.5px] z-[1]"
       />
+      <MessageIcon />
     </div>
   );
 }
