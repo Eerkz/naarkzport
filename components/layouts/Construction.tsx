@@ -41,7 +41,7 @@ export default function Construction() {
       </div>
       <p className="text-dark-blue font-[400] text-[20px] leading-[23.2px] mb-[17px] mt-[20px]">
         Site is still under construction. For the meantime,
-        <br /> enjoy these random pictures of dogs with jobs!
+        <br /> enjoy these random dog pictures!
       </p>
       <button
         type="button"
