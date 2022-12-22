@@ -29,13 +29,13 @@ export default function Construction() {
     <div className="flex flex-col justify-center items-center">
       <div
         id="construction-dog"
-        className="w-[280px] flex justify-center items-center relative h-[217px] rounded-[20px] bg-white object-cover bg-no-repeat bg-center border-solid border-[1px] border-black"
+        className="w-[280px] flex justify-center items-center relative h-[217px] rounded-[20px] bg-white border-solid border-[1px] border-black"
       >
         <div
           {...(currImage
             ? { style: { backgroundImage: `url(${currImage})` } }
             : {})}
-          className="w-full h-full absolute inset-0 rounded-[20px]"
+          className="w-full h-full absolute inset-0 rounded-[20px]  object-cover bg-no-repeat bg-center "
         ></div>
         <p>Fetching you the goodest boi...</p>
       </div>
