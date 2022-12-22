@@ -68,3 +68,7 @@ a {
   box-shadow: 0 8px 48px 0 rgb(10 11 30 / 8%), 0 4px 8px 0 rgb(10 11 30 / 6%);
   max-width: 1664px;
 }
+
+#construction-dog {
+  filter: drop-shadow(-10px 10px 0px #c7c7cb);
+}
