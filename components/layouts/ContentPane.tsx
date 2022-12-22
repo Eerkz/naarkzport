@@ -3,7 +3,10 @@ import ProjectBox from "../utils/ProjectBox";
 
 export default function ContentPane() {
   return (
-    <div className="grid sm:grid-cols-2 grid-cols-1 gap-[40px]">
+    <div
+      id="projects-container"
+      className="flex md:w-[70%] md:max-w-[600px] w-full gap-[40px] flex-wrap p-[20px] md:max-h-[600px] md:mt-[100px] mt-[50px] md:overflow-scroll"
+    >
       <ProjectBox
         stack={["Typescript", "NextJS", "Tailwind"]}
         color={"#81F4D6"}

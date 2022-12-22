@@ -18,7 +18,8 @@ export default function ProjectBox({
 }: ProjectBox) {
   return (
     <div
-      className="w-[253px] h-[254px] bg-white rounded-[12px] border-[1px] border-black px-[41px] pt-[42px]"
+      
+      className="project-box xl:w-[253px] xl:h-[254px] h-[194px] bg-white cursor-pointer rounded-[12px] border-[1px] border-black px-[41px] pt-[42px]"
       style={{ boxShadow: `-10px 10px 0px 3px ${color}` }}
     >
       <h1 className="font-[500] text-[20px] leading-[23px] mb-[17px]">

@@ -72,3 +72,12 @@ a {
 #construction-dog {
   filter: drop-shadow(-10px 10px 0px #c7c7cb);
 }
+
+#projects-container {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+#projects-container::-webkit-scrollbar {
+  display: none;
+}
