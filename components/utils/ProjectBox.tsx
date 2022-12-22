@@ -18,22 +18,21 @@ export default function ProjectBox({
 }: ProjectBox) {
   return (
     <div
-      
-      className="project-box xl:w-[253px] xl:h-[254px] h-[194px] bg-white cursor-pointer rounded-[12px] border-[1px] border-black px-[41px] pt-[42px]"
+      className="project-box-item min-h-[194px] ml-[15px] bg-white cursor-pointer rounded-[12px] border-[1px] border-black px-[41px] py-[40px]"
       style={{ boxShadow: `-10px 10px 0px 3px ${color}` }}
     >
-      <h1 className="font-[500] text-[20px] leading-[23px] mb-[17px]">
+      <h1 className="font-[500] text-[26px] leading-[23px] mb-[17px]">
         {title}
       </h1>
-      <p className="font-light text-[12px] leading-[140%]">{description}</p>
+      <p className="font-light text-[16px] leading-[140%]">{description}</p>
       <div className="text-white flex items-center mt-[22px]">
         <Image
           src={"/static/images/tool-icon.svg"}
           alt="tool-icon"
-          width={18}
-          height={18}
+          width={22}
+          height={22}
         />
-        <span className="font-[400] text-[12px] leading-[14px] text-black underline ml-[5px]">
+        <span className="font-[400] text-[16px] leading-[14px] text-black underline ml-[8px]">
           view stack
         </span>
       </div>

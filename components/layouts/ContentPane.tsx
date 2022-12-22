@@ -5,7 +5,7 @@ export default function ContentPane() {
   return (
     <div
       id="projects-container"
-      className="flex md:w-[70%] md:max-w-[600px] w-full gap-[40px] flex-wrap p-[20px] md:max-h-[600px] md:mt-[100px] mt-[50px] md:overflow-scroll"
+      className="flex md:w-[60%] w-full gap-[40px] flex-wrap p-[20px] md:max-h-[600px] md:mt-[100px] mt-[50px] md:overflow-scroll"
     >
       <ProjectBox
         stack={["Typescript", "NextJS", "Tailwind"]}
