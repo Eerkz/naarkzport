@@ -39,14 +39,14 @@ export default function Construction() {
         ></div>
         <p>Fetching you the goodest boi...</p>
       </div>
-      <p className="text-dark-blue font-[400] text-[20px] leading-[23.2px] mb-[17px] mt-[20px]">
+      <p className="text-dark-blue font-[400] text-[20px] leading-[23.2px] mb-[17px] mt-[20px] text-center">
         Site is still under construction. For the meantime,
         <br /> enjoy these random dog pictures!
       </p>
       <button
         type="button"
         onClick={fetchRandomPicture}
-        className="w-[55px] rounded-[12px] bg-dark-blue h-[55px] text-white flex justify-center items-center"
+        className="w-[55px] hover:bg-pastel-blue rounded-[12px] bg-dark-blue h-[55px] text-white flex justify-center items-center"
       >
         <Image
           src={"/static/images/refresh-icon.svg"}
