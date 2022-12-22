@@ -4,13 +4,13 @@ export default function MessageIcon() {
   return (
     <button
       type="button"
-      className="bg-dark-blue w-[49px] h-[49px] text-white absolute right-[36px] bottom-[40px] rounded-[50%] flex justify-center items-center"
+      className="bg-dark-blue w-[54px] h-[54px] text-white absolute right-[36px] bottom-[40px] rounded-[50%] flex justify-center items-center"
     >
       <Image
         src={"/static/images/message-icon.svg"}
         alt="message-icon"
-        width={20}
-        height={20}
+        width={25}
+        height={25}
       />
     </button>
   );

@@ -5,7 +5,7 @@ import Nav from "../navigation/Nav";
 
 export default function Main({ children }: { children: React.ReactNode }) {
   return (
-    <div className="w-full h-[100vh] overflow-hidden relative">
+    <div className="w-full md:h-[100vh] h-auto md:verflow-hidden relative">
       <Nav />
       <Image
         src={"/static/images/top-right-wave.svg"}
@@ -14,7 +14,7 @@ export default function Main({ children }: { children: React.ReactNode }) {
         height={369}
         className="absolute top-[-86px] right-0 z-[1]"
       />
-      <main className="relative z-[1000] flex justify-center items-center h-full w-full">
+      <main className="relative z-[1000] lg:px-[138px] md:px-[88px] px-[58px] md:pb-0 pb-[100px] flex md:justify-between items-center h-full w-full md:flex-row flex-col">
         {children}
       </main>
       <Image
