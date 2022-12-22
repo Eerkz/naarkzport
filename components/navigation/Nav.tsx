@@ -3,8 +3,11 @@ import Image from "next/image";
 
 export default function Nav() {
   return (
-    <div className="w-full px-[69px] mt-[50px]">
-      <nav className="w-full h-[64px] bg-white pl-[33px] pr-[12px] rounded-[20px] border-solid border-[1px] border-black flex justify-between items-center">
+    <div className="w-full px-[69px] mt-[50px] flex justify-center">
+      <nav
+        id="top-nav"
+        className="w-full h-[64px] bg-white pl-[33px] pr-[12px] rounded-[20px] border-solid border-[1px] border-black flex justify-between items-center"
+      >
         <div className="flex">
           <Image
             src={"/static/images/logo-small.svg"}
