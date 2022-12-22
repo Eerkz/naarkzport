@@ -5,7 +5,11 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        gtPro: ["GT Eesti Pro Display", "sans-serif"],
+      },
+    },
   },
   plugins: [],
-}
+};
