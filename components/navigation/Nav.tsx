@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Nav() {
   return (
-    <div className="w-full px-[69px] mt-[50px] flex justify-center">
+    <div className="w-full px-[69px] top-[50px] flex justify-center z-[1000] absolute">
       <nav
         id="top-nav"
         className="w-full h-[64px] bg-white pl-[33px] pr-[12px] rounded-[20px] border-solid border-[1px] border-black flex justify-between items-center"
