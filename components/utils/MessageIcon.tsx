@@ -24,9 +24,9 @@ export default function MessageIcon() {
   };
 
   return (
-    <div className="fixed right-[36px] bottom-[40px] z-[1000] flex flex-col ">
+    <div className="fixed right-[36px] bottom-[40px] z-[1200] flex flex-col ">
       {openForm && (
-        <div className="w-[340px] h-auto bg-white rounded-[20px] mr-[54px] border-solid border-[1px] border-black relative">
+        <div className="md:w-[340px] w-[85vw] h-auto bg-white rounded-[20px] md:mr-[54px] border-solid md:mb-0 mb-[20px] border-[1px] border-black relative">
           <div className="bg-dark-blue w-full h-[89px] rounded-t-[16px] flex flex-col justify-center items-center">
             <h1 className="font-[400] text-[22px] text-white leading-[23px]">
               Shoot me a message!
