@@ -1,0 +1,38 @@
+.pop-up {
+  animation: popUp 0.4s forwards;
+  display: block;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.pop-down {
+  animation: popDown 0.4s forwards;
+  display: block;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.64, 0, 0.78, 0);
+}
+
+@keyframes popUp {
+  from {
+    height: 0;
+    width: 0;
+  }
+
+  to {
+    height: 500px;
+    width: 300px;
+  }
+}
+
+@keyframes popDown {
+  from {
+    height: 500px;
+    width: 300px;
+  }
+  to {
+    height: 0;
+    width: 0;
+    display: hidden;
+    border: 0;
+  }
+}
