@@ -38,10 +38,10 @@
 }
 
 .tech-box:hover {
-  animation: shake 150ms 2 linear;
-  -moz-animation: shake 150ms 2 linear;
-  -webkit-animation: shake 150ms 2 linear;
-  -o-animation: shake 150ms 2 linear;
+  animation: shake 150ms 2 forwards;
+  -moz-animation: shake 150ms 2 forwards;
+  -webkit-animation: shake 150ms 2 forwards;
+  -o-animation: shake 150ms 2 forwards;
 }
 
 @keyframes shake {
