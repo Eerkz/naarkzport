@@ -4,6 +4,7 @@ import useWindowSize from "../../hooks/useWindowSize";
 
 export default function Nav() {
   const { width } = useWindowSize();
+
   return (
     <div className="w-full sm:px-[69px] px-[38px] top-[50px] flex justify-center z-[1100] absolute">
       <nav
