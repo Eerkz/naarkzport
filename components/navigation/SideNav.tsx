@@ -10,7 +10,7 @@ export default function SideNav() {
         <span className=" w-[20px] h-auto">02</span>Tech Stack
       </li>
       <li className="flex gap-x-[25px]">
-        <span className=" w-[20px] h-auto">03</span>Services
+        <span className=" w-[20px] h-auto">03</span>Services FAQ
       </li>
       <li className="flex gap-x-[25px]">
         <span className=" w-[20px] h-auto">04</span>Contact Details

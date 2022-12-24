@@ -139,3 +139,27 @@
   pointer-events: auto;
 }
 
+/* Accordion */
+
+.accordion-plus-expand {
+  transform: rotate(45deg);
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.accordion-plus-collapse {
+  transform: rotate(0);
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.accordion-content > p {
+  font-weight: 400;
+}
+
+.accordion-content-collapse {
+  height: 0;
+}
+
+.accordion-content-expand {
+  height: auto;
+  padding-bottom: 30px;
+}

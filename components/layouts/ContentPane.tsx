@@ -1,6 +1,7 @@
 import React from "react";
 import ProjectBox from "../utils/ProjectBox";
 import TechStack from "./TechStack";
+import Services from "./Services";
 
 export default function ContentPane() {
   return (
@@ -27,6 +28,7 @@ export default function ContentPane() {
           color={"#FF837D"}
         />
         <TechStack />
+        <Services />
       </div>
     </>
   );
