@@ -14,7 +14,7 @@ export default function Main({ children }: { children: React.ReactNode }) {
         height={369}
         className="absolute top-[-86px] right-0 z-[1]"
       />
-      <main className="relative z-[1000] lg:px-[138px] md:px-[88px] px-[58px] md:pb-0 pb-[100px] flex md:justify-between items-center h-full w-full md:flex-row flex-col">
+      <main className="relative z-[1000] sm:px-[69px] px-[38px] md:pb-0 pb-[100px] flex md:justify-between h-full w-full md:flex-row flex-col">
         {children}
       </main>
       <Image
