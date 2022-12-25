@@ -11,7 +11,7 @@ export default function Services() {
         <span className="underline">best and most affordable</span> solution for
         you, and you will get a website that is ready to launch.
       </p>
-      <div className="mt-[30px]">
+      <div className="mt-[30px] flex flex-col md:justify-center justify-center">
         <Accordion title="What services do i offer?">
           <ul className="list-disc pl-4">
             <li>

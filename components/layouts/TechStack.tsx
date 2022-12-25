@@ -11,7 +11,7 @@ export default function TechStack() {
         Anything that&apos;s not here, you can bet I can learn quickly as
         needed. That&apos;s what we developers do :)
       </p>
-      <div className="flex flex-wrap gap-[21px] mt-[43px]">
+      <div className="flex flex-wrap gap-[21px] mt-[43px] md:justify-start justify-center">
         <TechBox color="bg-pastel-violet" icon="nextjs.svg" name="Next.js" />
         <TechBox color="bg-dark-gray" />
         <TechBox color="bg-dark-gray" />
