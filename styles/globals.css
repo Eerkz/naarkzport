@@ -143,9 +143,6 @@ a {
 /* Social Icons */
 
 .social-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border: 1px solid #000000;
   box-shadow: -5px 5px 0px #000000;
   border-radius: 50px;
@@ -192,4 +189,50 @@ a {
 
 #social-icons-list li:nth-child(4):hover {
   background-position: 100% 100%;
+}
+
+.social-front {
+  transform-style: preserve-3d;
+}
+
+.social-back {
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+}
+
+.social-content {
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.social-inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.social-icon {
+  perspective: none;
+}
+
+.social-content {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.social-inner:hover {
+  transform: rotateY(-180deg);
 }
