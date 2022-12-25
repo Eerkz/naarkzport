@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Contact() {
   return (
-    <div className="mb-[50px]">
+    <div className="my-[40px]">
       <h1 className="font-medium text-[28px]">Contact Details</h1>
       <p className="text-[18px] font-normal mt-[21px]">
         You can contact me in any of these platform!

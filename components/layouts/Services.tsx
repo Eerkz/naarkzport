@@ -3,7 +3,7 @@ import Accordion from "../utils/Accordion";
 
 export default function Services() {
   return (
-    <div className="mb-[50px]">
+    <div className="my-[40px]">
       {" "}
       <h1 className="font-medium text-[28px]">Services</h1>
       <p className="text-[18px] font-normal mt-[21px]">

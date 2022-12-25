@@ -3,7 +3,7 @@ import TechBox from "../utils/TechBox";
 
 export default function TechStack() {
   return (
-    <div className="my-[50px]">
+    <div className="my-[40px]">
       <h1 className="font-medium text-[28px]">
         What makes my work possible...
       </h1>
