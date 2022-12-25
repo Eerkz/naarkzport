@@ -82,7 +82,7 @@ export default function Home() {
             threshold={0.4}
             onChange={(inView) => setIsProjectsVisible(inView)}
           >
-            <div className="flex flex-col gap-[40px] md:mt-[80px]">
+            <div className="flex flex-col gap-[40px] md:mt-[50px]">
               <ProjectBox
                 stack={["Typescript", "NextJS", "Tailwind"]}
                 color={"#81F4D6"}
