@@ -2,6 +2,7 @@ import React from "react";
 import ProjectBox from "../utils/ProjectBox";
 import TechStack from "./TechStack";
 import Services from "./Services";
+import Contact from "./Contact";
 
 export default function ContentPane() {
   return (
@@ -29,6 +30,7 @@ export default function ContentPane() {
         />
         <TechStack />
         <Services />
+        <Contact />
       </div>
     </>
   );
