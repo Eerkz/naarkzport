@@ -29,16 +29,13 @@ export default function Accordion({
         />
       </div>
       <div
-        className={`accordion-content ${
-          expandContent ? "accordion-content-expand" : "accordion-content-collapse"
+        className={`accordion-content w-full ${
+          expandContent
+            ? "accordion-content-expand"
+            : "accordion-content-collapse"
         }`}
       >
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at
-          viverra elit, et dignissim diam. Vivamus tincidunt euismod accumsan.
-          Mauris scelerisque condimentum velit a dapibus. Curabitur pulvinar
-          nisi vel arcu mollis euismod.
-        </p>
+        {children}
       </div>
     </div>
   );
