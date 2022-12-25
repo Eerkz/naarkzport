@@ -16,7 +16,7 @@ export default function Accordion({
       className={`accordion flex flex-col`}
       onClick={() => setExpandContent(!expandContent)}
     >
-      <div className="flex justify-between w-full h-[79px] items-center">
+      <div className="flex justify-between w-full h-[79px] items-center accordion-title">
         <h1 className="">{title}</h1>
         <Image
           src={"/static/images/plus.svg"}

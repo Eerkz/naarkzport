@@ -114,5 +114,28 @@ a {
   align-items: center;
   font-size: 18px;
   font-weight: 500;
+  cursor: pointer;`
+}
+
+.accordion-title {
+  position: relative;
+  padding: 20px;
   cursor: pointer;
+}
+
+.accordion-content {
+  font-weight: 350;
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  will-change: max-height;
+  transition: all 0.25s ease-out;
+  color: black;
+  opacity: 0;
+}
+
+.accordion-content-expand {
+  max-height: max-content;
+  opacity: 1;
+  padding-bottom: 32px;
 }
