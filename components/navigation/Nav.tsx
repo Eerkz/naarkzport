@@ -23,7 +23,7 @@ export default function Nav() {
         {width > 480 ? (
           <button
             type="button"
-            className="font-[400] h-[48px] cursor-pointer hover:bg-pastel-blue bg-dark-blue w-[135px] text-white rounded-[12px] flex justify-center items-center"
+            className="font-[400] h-[48px] cursor-pointer bg-dark-blue w-[135px] text-white rounded-[12px] flex justify-center items-center"
           >
             Contact Me
           </button>

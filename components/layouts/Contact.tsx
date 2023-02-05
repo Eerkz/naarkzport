@@ -31,7 +31,7 @@ export default function Contact() {
             </div>
             <div className="social-content social-back">
               <a
-                href="https://www.linkedin.com/in/wilma-a-0b6576220/"
+                href="https://linkedin.com"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -48,7 +48,7 @@ export default function Contact() {
         <li id="email" className="social-icon ">
           <div className="social-inner">
             <div className="social-content social-front">
-              <CopyToClipboard text={"Naarkz#7945"}>
+              <CopyToClipboard text={"User#6678"}>
                 <Image
                   src={"/static/images/social/discord.svg"}
                   alt="discord-icon"
@@ -72,7 +72,7 @@ export default function Contact() {
         <li id="discord" className="social-icon ">
           <div className="social-inner">
             <div className="social-content social-front">
-              <CopyToClipboard text={"wcalemios@gmail.com"}>
+              <CopyToClipboard text={"naark.dev@gmail.com"}>
                 <Image
                   src={"/static/images/social/email.svg"}
                   alt="email-icon"
@@ -82,7 +82,7 @@ export default function Contact() {
               </CopyToClipboard>
             </div>
             <div className="social-content social-back">
-              <CopyToClipboard text={"wcalemios@gmail.com"}>
+              <CopyToClipboard text={"naark.dev@gmail.com"}>
                 <Image
                   src={"/static/images/social/copy.svg"}
                   alt="copy-icon"
@@ -96,7 +96,7 @@ export default function Contact() {
         <li id="whatsapp" className="social-icon ">
           <div className="social-inner">
             <div className="social-content social-front">
-              <CopyToClipboard text={"https://wa.me/63948989664"}>
+              <CopyToClipboard text={"naark.dev@gmail.com"}>
                 <Image
                   src={"/static/images/social/whatsapp.svg"}
                   alt="whatsapp-icon"
@@ -106,7 +106,7 @@ export default function Contact() {
               </CopyToClipboard>
             </div>
             <div className="social-content social-back">
-              <CopyToClipboard text={"https://wa.me/63948989664"}>
+              <CopyToClipboard text={"naark.dev@gmail.com"}>
                 <Image
                   src={"/static/images/social/copy.svg"}
                   alt="copy-icon"
