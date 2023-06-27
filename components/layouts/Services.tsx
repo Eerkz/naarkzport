@@ -27,11 +27,7 @@ export default function Services() {
             </li>
             <li>
               <span className="font-bold">Headless Content Management</span>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-                egestas est mollis consectetur pharetra. Proin nec lorem nec leo
-                pretium semper.
-              </p>
+              <p>Customing an existing CMS platform that best works for you.</p>
             </li>
             <li>
               <span className="font-bold">Backend Development</span>
@@ -40,9 +36,9 @@ export default function Services() {
           </ul>
         </Accordion>
         <Accordion title="How long does a project take?">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam egestas
-          est mollis consectetur pharetra. Proin nec lorem nec leo pretium
-          semper.
+          Depends on the project. A typical one-page site could take 1-2 weeks
+          depending on the complexity of the design. Bigger projects could take
+          months.
         </Accordion>
         <Accordion title="Will the website be responsive?">
           Yes, it&apos; standard for all website to be mobile responsive
@@ -54,13 +50,6 @@ export default function Services() {
             would be included as operations cost (with additional maintenance
             cost!) that I will charge to you. However, if you prefer to manage
             your own hosting and domain, then we can surely arrange that :)
-          </p>
-        </Accordion>
-        <Accordion title="Can I change the content once finished?">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam egestas
-            est mollis consectetur pharetra. Proin nec lorem nec leo pretium
-            semper.
           </p>
         </Accordion>
         <Accordion title="How often do I update?">
