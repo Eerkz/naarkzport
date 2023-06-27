@@ -20,7 +20,7 @@ export default function Nav() {
           />
           <span className="font-bold text-[20px] ml-[11px]">naark.dev</span>
         </div>
-        {width > 480 ? (
+        {/* {width > 480 ? (
           <button
             type="button"
             className="font-[400] h-[48px] cursor-pointer bg-dark-blue w-[135px] text-white rounded-[12px] flex justify-center items-center"
@@ -39,7 +39,7 @@ export default function Nav() {
               height={18}
             />
           </button>
-        )}
+        )} */}
       </nav>
     </div>
   );
