@@ -26,8 +26,11 @@ export default function ProjectBox({
           className="project-box-item min-h-[194px] md:ml-[15px] bg-white cursor-pointer rounded-[12px] border-[1px] border-black px-[41px] py-[40px]"
           style={{ boxShadow: `-10px 10px 0px 3px ${color}` }}
         >
-          <h1 className="font-[500] text-[26px] leading-[23px] mb-[17px]">
+          <h1 className="font-[500] text-[26px] leading-[23px] mb-[17px] flex items-center">
             {title}
+            <span className="bg-dark-blue text-white rounded-full px-2 text-xs py-1 ml-2">
+              live
+            </span>
           </h1>
           <p className="font-light text-[16px] leading-[140%]">{description}</p>
           <div className="text-white flex items-center mt-[22px]">
