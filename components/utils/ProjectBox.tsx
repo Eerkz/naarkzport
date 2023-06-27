@@ -1,8 +1,10 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 type ProjectBox = {
   color: string;
+  link?: string;
   children?: React.ReactNode;
   title?: string;
   description?: string;
@@ -12,10 +14,37 @@ type ProjectBox = {
 export default function ProjectBox({
   color,
   children,
+  link,
   title = "Title of Project",
   description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed mattis mi. Etiam aliquet pulvinar dignissim. Integer convallis sagittis enim eget congue.",
   stack,
 }: ProjectBox) {
+  if (link) {
+    return (
+      <Link href={link} target="_black" rel="noreferrer">
+        <div
+          className="project-box-item min-h-[194px] md:ml-[15px] bg-white cursor-pointer rounded-[12px] border-[1px] border-black px-[41px] py-[40px]"
+          style={{ boxShadow: `-10px 10px 0px 3px ${color}` }}
+        >
+          <h1 className="font-[500] text-[26px] leading-[23px] mb-[17px]">
+            {title}
+          </h1>
+          <p className="font-light text-[16px] leading-[140%]">{description}</p>
+          <div className="text-white flex items-center mt-[22px]">
+            <Image
+              src={"/static/images/tool-icon.svg"}
+              alt="tool-icon"
+              width={22}
+              height={22}
+            />
+            <span className="font-[400] text-[16px] leading-[14px] text-black ml-[8px]">
+              {stack.join(", ")}
+            </span>
+          </div>
+        </div>
+      </Link>
+    );
+  }
   return (
     <div
       className="project-box-item min-h-[194px] md:ml-[15px] bg-white cursor-pointer rounded-[12px] border-[1px] border-black px-[41px] py-[40px]"
@@ -32,8 +61,8 @@ export default function ProjectBox({
           width={22}
           height={22}
         />
-        <span className="font-[400] text-[16px] leading-[14px] text-black underline ml-[8px]">
-          view stack
+        <span className="font-[400] text-[16px] leading-[14px] text-black ml-[8px]">
+          {stack.join(", ")}
         </span>
       </div>
     </div>
