@@ -2,6 +2,7 @@ import "../styles/globals.css";
 import "../styles/animation.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
+import { ThemeProvider } from "../store/ThemeContext";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -9,7 +10,9 @@ export default function App({ Component, pageProps }: AppProps) {
       <Head>
         <title>Naarkz.dev</title>
       </Head>
-      <Component {...pageProps} />
+      <ThemeProvider>
+        <Component {...pageProps} />
+      </ThemeProvider>
     </>
   );
 }
