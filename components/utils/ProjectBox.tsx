@@ -33,16 +33,17 @@ export default function ProjectBox({
             </span>
           </h1>
           <p className="font-light text-[16px] leading-[140%]">{description}</p>
-          <div className="text-white flex items-center mt-[22px]">
+          <div className="text-white flex items-start mt-[22px]">
             <Image
               src={"/static/images/tool-icon.svg"}
               alt="tool-icon"
               width={22}
               height={22}
+              className="min-h-[22px] min-w-[22px]"
             />
-            <span className="font-[400] text-[16px] leading-[14px] text-black ml-[8px]">
+            <p className="font-[400] text-[16px] leading-tight text-black ml-[8px]">
               {stack.join(", ")}
-            </span>
+            </p>
           </div>
         </div>
       </Link>
@@ -57,16 +58,17 @@ export default function ProjectBox({
         {title}
       </h1>
       <p className="font-light text-[16px] leading-[140%]">{description}</p>
-      <div className="text-white flex items-center mt-[22px]">
+      <div className="text-white flex items-start mt-[22px]">
         <Image
           src={"/static/images/tool-icon.svg"}
           alt="tool-icon"
           width={22}
           height={22}
+          className="min-h-[22px] min-w-[22px]"
         />
-        <span className="font-[400] text-[16px] leading-[14px] text-black ml-[8px]">
+        <p className="font-[400] text-[16px] leading-start text-black ml-[8px]">
           {stack.join(", ")}
-        </span>
+        </p>
       </div>
     </div>
   );

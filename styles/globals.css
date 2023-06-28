@@ -102,8 +102,6 @@ a {
   background-color: #fff;
   box-shadow: 0 0 1px 0 rgb(66 71 76 / 25%), 0 8px 48px 0 rgb(10 11 30 / 8%),
     0 4px 8px 0 rgb(10 11 30 / 6%);
-  padding-right: 32px;
-  padding-left: 32px;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -114,12 +112,6 @@ a {
   align-items: center;
   font-size: 18px;
   font-weight: 500;
-  cursor: pointer;
-}
-
-.accordion-title {
-  position: relative;
-  padding: 20px;
   cursor: pointer;
 }
 
