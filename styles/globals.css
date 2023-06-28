@@ -64,7 +64,7 @@ a {
   text-decoration: none;
 }
 
-#top-nav {
+.top-nav {
   box-shadow: 0 8px 48px 0 rgb(10 11 30 / 8%), 0 4px 8px 0 rgb(10 11 30 / 6%);
 }
 
@@ -87,20 +87,20 @@ a {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.tech-box {
+.tech-box-light {
   box-shadow: -5px 5px 0px #000000;
+}
+
+.dark-shadow {
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+    rgba(0, 0, 0, 0.07) 0px 16px 16px;
 }
 
 .accordion {
   overflow: hidden;
   margin-bottom: 20px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: black;
   border-radius: 30px;
-  background-color: #fff;
-  box-shadow: 0 0 1px 0 rgb(66 71 76 / 25%), 0 8px 48px 0 rgb(10 11 30 / 8%),
-    0 4px 8px 0 rgb(10 11 30 / 6%);
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -114,6 +114,11 @@ a {
   cursor: pointer;
 }
 
+.accordion-shadow {
+  box-shadow: 0 0 1px 0 rgb(66 71 76 / 25%), 0 8px 48px 0 rgb(10 11 30 / 8%),
+    0 4px 8px 0 rgb(10 11 30 / 6%);
+}
+
 .accordion-content {
   font-weight: 350;
   padding: 0 20px;
@@ -121,7 +126,6 @@ a {
   overflow: hidden;
   will-change: max-height;
   transition: all 0.25s ease-out;
-  color: black;
   opacity: 0;
 }
 
@@ -134,12 +138,15 @@ a {
 /* Social Icons */
 
 .social-icon {
-  border: 1px solid #000000;
-  box-shadow: -5px 5px 0px #000000;
   border-radius: 50px;
   width: 85px;
   height: 85px;
   cursor: pointer;
+}
+
+.social-icon-drop-light {
+  border: 1px solid #000000;
+  box-shadow: -5px 5px 0px #000000;
 }
 
 #social-icons-list li:nth-child(1) {

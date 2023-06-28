@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import Image from "next/image";
 import { useForm } from "react-hook-form";
 import Loading from "./Loading";
+import { useTheme } from "../../store/ThemeContext";
 
 export default function MessageIcon() {
+  const { theme } = useTheme();
   const [openForm, setOpenForm] = useState<boolean | undefined>(undefined);
   const [isLoading, setIsLoading] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<"" | "success" | "failed">(
@@ -57,15 +58,21 @@ export default function MessageIcon() {
         className={`
         ${
           openForm ? "pop-up" : "pop-down"
-        } hidden bg-white rounded-[20px] md:mr-[54px] border-solid md:mb-0 mb-[20px] border-[1px] border-black`}
+        } hidden bg-white rounded-[20px] md:mr-[54px] border-solid md:mb-0 mb-[20px] ${
+          theme === "light" ? "border-[1px] border-black" : "dark-shadow"
+        }`}
       >
         <div
-          className={`bg-dark-blue w-full h-[89px] rounded-t-[16px] flex flex-col justify-center items-center`}
+          className={`${
+            theme === "light"
+              ? "bg-dark-blue text-white"
+              : "bg-dark-mode-primary text-dark-mode-secondary"
+          } w-full h-[89px] rounded-t-[16px] flex flex-col justify-center items-center`}
         >
-          <h1 className="font-[400] text-[22px] text-white leading-[23px]">
+          <h1 className="font-[400] text-[22px] leading-[23px]">
             Shoot me a message!
           </h1>
-          <p className="font-[350] text-[14px] text-white">
+          <p className="font-[350] text-[14px] ">
             I&apos;ll get back to you soon.
           </p>
         </div>
@@ -174,22 +181,36 @@ export default function MessageIcon() {
         <button
           type="button"
           onClick={() => setOpenForm(!openForm)}
-          className="bg-dark-blue w-[54px] h-[54px] text-white  rounded-[50%] flex justify-center items-center "
+          className={`${
+            theme === "light" ? "bg-dark-blue" : "bg-dark-mode-secondary-light"
+          } w-[54px] h-[54px] rounded-[50%] flex justify-center items-center dark-shadow`}
         >
           {!openForm ? (
-            <Image
-              src={"/static/images/message-icon.svg"}
-              alt="message-icon"
-              width={25}
-              height={25}
-            />
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18 0H2C0.9 0 0.00999999 0.9 0.00999999 2L0 20L4 16H18C19.1 16 20 15.1 20 14V2C20 0.9 19.1 0 18 0ZM4 7H16V9H4V7ZM12 12H4V10H12V12ZM16 6H4V4H16V6Z"
+                fill={"white"}
+              />
+            </svg>
           ) : (
-            <Image
-              src={"/static/images/close-icon.svg"}
-              alt="close-icon"
-              width={23}
-              height={23}
-            />
+            <svg
+              width="17"
+              height="17"
+              viewBox="0 0 17 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17 1.71214L15.2879 0L8.5 6.78786L1.71214 0L0 1.71214L6.78786 8.5L0 15.2879L1.71214 17L8.5 10.2121L15.2879 17L17 15.2879L10.2121 8.5L17 1.71214Z"
+                fill={"white"}
+              />
+            </svg>
           )}
         </button>
       </div>

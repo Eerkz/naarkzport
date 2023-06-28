@@ -4,8 +4,10 @@ import ProjectBox from "../components/utils/ProjectBox";
 import TechStack from "../components/layouts/TechStack";
 import Services from "../components/layouts/Services";
 import Contact from "../components/layouts/Contact";
+import { useTheme } from "../store/ThemeContext";
 
 export default function Home() {
+  const { theme } = useTheme();
   const parentDivRef = useRef<HTMLDivElement>(null);
   const projectsRef = useRef<HTMLDivElement>(null);
   const techRef = useRef<HTMLDivElement>(null);
@@ -61,7 +63,7 @@ export default function Home() {
             <h1 className="font-bold text-[48px] leading-none">
               Hi, I&apos;m Naarkz.
             </h1>
-            <p className="font-[300] text-lg leading-tight mt-3">
+            <p className={`font-[300] text-lg leading-tight mt-3`}>
               I&apos;m a skilled front-end engineer with 1 year experience,{" "}
               <br className="nest:block hidden" />
               specializing in building full-stack applications{" "}
@@ -71,7 +73,11 @@ export default function Home() {
           <ul className="font-[500] text-[18px] leading-[21px] flex flex-col gap-y-[18px] uppercase">
             <li
               className={`flex gap-x-[25px] cursor-pointer ${
-                visibleSection === "projects" ? "font-bold" : ""
+                visibleSection === "projects"
+                  ? `font-bold ${
+                      theme === "dark" ? "text-dark-mode-primary" : ""
+                    }`
+                  : ""
               }`}
               onClick={() => scrollTo(projectsRef)}
             >
@@ -79,7 +85,11 @@ export default function Home() {
             </li>
             <li
               className={`flex gap-x-[25px]  cursor-pointer ${
-                visibleSection === "techstack" ? "font-bold" : ""
+                visibleSection === "techstack"
+                  ? `font-bold ${
+                      theme === "dark" ? "text-dark-mode-primary" : ""
+                    }`
+                  : ""
               }`}
               onClick={() => scrollTo(techRef)}
             >
@@ -87,7 +97,11 @@ export default function Home() {
             </li>
             <li
               className={`flex gap-x-[25px] cursor-pointer ${
-                visibleSection === "services" ? "font-bold" : ""
+                visibleSection === "services"
+                  ? `font-bold ${
+                      theme === "dark" ? "text-dark-mode-primary" : ""
+                    }`
+                  : ""
               }`}
               onClick={() => scrollTo(servicesRef)}
             >
@@ -95,7 +109,11 @@ export default function Home() {
             </li>
             <li
               className={`flex gap-x-[25px]  cursor-pointer ${
-                visibleSection === "contacts" ? "font-bold" : ""
+                visibleSection === "contacts"
+                  ? `font-bold ${
+                      theme === "dark" ? "text-dark-mode-primary" : ""
+                    }`
+                  : ""
               }`}
               onClick={() => scrollTo(contactRef)}
             >

@@ -1,8 +1,11 @@
 import React from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import Image from "next/image";
+import { useTheme } from "../../store/ThemeContext";
 
 export default function Contact() {
+  const { theme } = useTheme();
+  const borderStyle = theme === "light" ? "social-icon-drop-light" : "";
   return (
     <div>
       <h1 className="font-medium text-[28px]">Contact Details</h1>
@@ -13,7 +16,7 @@ export default function Contact() {
         className="flex text-[28px] gap-[20px] mt-[20px] flex-wrap"
         id="social-icons-list"
       >
-        <li id="linkedin" className="social-icon ">
+        <li id="linkedin" className={`social-icon ${borderStyle}`}>
           <div className="social-inner">
             <div className="social-content social-front">
               <a
@@ -30,11 +33,7 @@ export default function Contact() {
               </a>
             </div>
             <div className="social-content social-back">
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href="https://linkedin.com" target="_blank" rel="noreferrer">
                 <Image
                   src={"/static/images/social/link.svg"}
                   alt="link-icon"
@@ -45,7 +44,7 @@ export default function Contact() {
             </div>
           </div>
         </li>
-        <li id="email" className="social-icon ">
+        <li id="email" className={`social-icon ${borderStyle}`}>
           <div className="social-inner">
             <div className="social-content social-front">
               <CopyToClipboard text={"User#6678"}>
@@ -69,7 +68,7 @@ export default function Contact() {
             </div>
           </div>
         </li>
-        <li id="discord" className="social-icon ">
+        <li id="discord" className={`social-icon ${borderStyle}`}>
           <div className="social-inner">
             <div className="social-content social-front">
               <CopyToClipboard text={"naark.dev@gmail.com"}>
@@ -93,7 +92,7 @@ export default function Contact() {
             </div>
           </div>
         </li>
-        <li id="whatsapp" className="social-icon ">
+        <li id="whatsapp" className={`social-icon ${borderStyle}`}>
           <div className="social-inner">
             <div className="social-content social-front">
               <CopyToClipboard text={"naark.dev@gmail.com"}>

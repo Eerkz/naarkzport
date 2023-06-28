@@ -8,17 +8,28 @@ export default function Nav() {
   return (
     <div className="w-full sm:px-[69px] px-[38px] top-[50px] flex justify-between z-[1100] absolute">
       <nav
-        id="top-nav"
-        className="w-full h-[64px] bg-white fold:pl-[33px] pl-[12px] pr-[12px] rounded-[20px] border-solid border-[1px] border-black flex justify-between items-center"
+        className={`w-full h-[64px] fold:pl-[33px] pl-[12px] pr-[12px] rounded-[20px]  flex justify-between items-center ${
+          theme === "light"
+            ? "bg-white border-solid border-[1px] border-black top-nav"
+            : "bg-dark-mode-secondary-light dark-shadow"
+        }`}
       >
         <div className="flex">
           <Image
-            src={"/static/images/logo-small.svg"}
+            src={`/static/images/${
+              theme === "light" ? "logo-small" : "logo-small-white"
+            }.svg`}
             alt="naarkz-logo-small"
             width={33}
             height={21}
           />
-          <span className="font-bold text-[20px] ml-[11px]">naarkz.dev</span>
+          <span
+            className={`font-bold text-[20px] ml-[11px] ${
+              theme === "light" ? "text-dark-mode-secondary" : "text-white"
+            }`}
+          >
+            naarkz.dev
+          </span>
         </div>
         <div className="flex relative">
           {theme === "light" ? (

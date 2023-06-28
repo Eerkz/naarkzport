@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { useTheme } from "../../store/ThemeContext";
 
 export default function TechBox({
   color,
@@ -12,11 +13,24 @@ export default function TechBox({
   width?: number;
   name?: string;
 }) {
+  const { theme } = useTheme();
   return (
     <div
-      className={`${color} tech-box cursor-pointer w-[85px] h-[85px] flex justify-center items-center border-[1px] border-black`}
+      className={`${color} tech-box cursor-pointer w-[85px] h-[85px] flex justify-center items-center ${
+        theme === "light"
+          ? "border-[1px] tech-box-light border-black"
+          : "dark-shadow"
+      }`}
     >
-      {name && <span className="tooltip">{name}</span>}
+      {name && (
+        <span
+          className={`tooltip ${
+            theme === "light" ? "tooltip-light" : "tooltip-dark"
+          }`}
+        >
+          {name}
+        </span>
+      )}
       {icon && (
         <Image
           src={`/static/images/tech_icons/${icon}`}
