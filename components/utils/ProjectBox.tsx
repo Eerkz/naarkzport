@@ -68,7 +68,7 @@ export default function ProjectBox({
             viewBox="0 0 22 22"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="mt-[1px]"
+            className="mt-[1px] min-w-[22px] min-h-[22px]"
           >
             <path
               fillRule="evenodd"
@@ -99,14 +99,14 @@ export default function ProjectBox({
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed mattis mi. Etiam aliquet pulvinar dignissim. Integer convallis sagittis enim eget congue."
         }
       </p>
-      <div className="text-white flex items-start mt-[22px]">
+      <div className="flex items-start mt-[22px]">
         <svg
           width="25"
           height="25"
           viewBox="0 0 22 22"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="mt-[1px]"
+          className="mt-[1px] min-w-[22px] min-h-[22px]"
         >
           <path
             fillRule="evenodd"
@@ -116,9 +116,9 @@ export default function ProjectBox({
           />
         </svg>
 
-        <p className="font-[400] text-[16px] leading-startml-[8px]">
-          {sampStack.join(", ")}
-        </p>
+        <p className="font-[400] text-[16px] leading-tight ml-[8px]">
+            {sampStack.join(", ")}
+          </p>
       </div>
     </div>
   );
