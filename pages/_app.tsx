@@ -8,7 +8,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Naarkz.dev</title>
+        <title>samp.dev</title>
       </Head>
       <ThemeProvider>
         <Component {...pageProps} />
