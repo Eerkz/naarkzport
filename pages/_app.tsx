@@ -8,7 +8,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>samp.dev</title>
+        <title>sampleonly.dev</title>
       </Head>
       <ThemeProvider>
         <Component {...pageProps} />
