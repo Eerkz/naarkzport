@@ -1,13 +1,19 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { useForm } from "react-hook-form";
+import Loading from "./Loading";
 
 export default function MessageIcon() {
   const [openForm, setOpenForm] = useState<boolean | undefined>(undefined);
+  const [isLoading, setIsLoading] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<"" | "success" | "failed">(
+    ""
+  );
   const defaultValues = {
     name: "",
     subject: "",
     message: "",
+    email: "",
   };
 
   const {
@@ -17,95 +23,153 @@ export default function MessageIcon() {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data: any) => {
-    console.log(`MESSAGE DATA: `, data);
+  const onSubmit = async (formData: any) => {
+    try {
+      setIsLoading(true);
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
-    reset(defaultValues);
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.message);
+      }
+      setSubmitStatus("success");
+      reset(defaultValues);
+    } catch (error: any) {
+      setSubmitStatus("failed");
+    } finally {
+      setIsLoading(false);
+      setTimeout(() => {
+        setSubmitStatus("");
+      }, 3000);
+    }
   };
 
   return (
     <div className="fixed right-[36px] bottom-[40px] z-[1200] flex flex-col ">
-      {true && (
-        <div
-          className={`
+      <div
+        className={`
         ${
-          openForm === true ? "pop-up" : openForm === false ? "pop-down" : ""
+          openForm ? "pop-up" : "pop-down"
         } hidden bg-white rounded-[20px] md:mr-[54px] border-solid md:mb-0 mb-[20px] border-[1px] border-black`}
+      >
+        <div
+          className={`bg-dark-blue w-full h-[89px] rounded-t-[16px] flex flex-col justify-center items-center`}
         >
-          <div
-            className={`bg-dark-blue w-full h-[89px] rounded-t-[16px] flex flex-col justify-center items-center`}
-          >
-            <h1 className="font-[400] text-[22px] text-white leading-[23px]">
-              Shoot me a message!
-            </h1>
-            <p className="font-[350] text-[14px] text-white">
-              I&apos;ll get back to you soon.
-            </p>
-          </div>
-          <form
-            onSubmit={handleSubmit(onSubmit)}
-            className="px-[20px] py-[24px]"
-          >
-            <div className="flex flex-col">
-              <label className="font-[500] text-[16px] mb-[10px]">Name</label>
-              <input
-                className="message-input border-[1px] border-black border-solid h-[35px] px-[10px] text-[14px] focus:outline-0 "
-                type="text"
-                {...register("name", {
-                  required: true,
-                })}
-              ></input>
-              {errors?.name && (
-                <p className="mt-[5px] text-[14px] text-red-600">
-                  This field is required.
-                </p>
-              )}
-            </div>
-            <div className="flex flex-col mt-[11px]">
-              <label className="font-[500] text-[16px] mb-[10px]">
-                Subject
-              </label>
-              <input
-                className="message-input border-[1px] border-black border-solid h-[35px] px-[10px] text-[14px] focus:outline-0 "
-                type="text"
-                {...register("subject", {
-                  required: true,
-                })}
-              ></input>
-              {errors?.subject && (
-                <p className="mt-[5px] text-[14px] text-red-600">
-                  This field is required.
-                </p>
-              )}
-            </div>
-            <div className="flex flex-col mt-[11px]">
-              <label className="font-[500] text-[16px] mb-[10px]">
-                Message
-              </label>
-              <textarea
-                className="message-input border-[1px] border-black border-solid px-[10px] text-[14px] focus:outline-0 "
-                rows={5}
-                {...register("message", {
-                  required: true,
-                })}
-              ></textarea>
-              {errors?.message && (
-                <p className="mt-[5px] text-[14px] text-red-600">
-                  Message is required.
-                </p>
-              )}
-            </div>
-            <div className="flex justify-center">
-              <button
-                type="submit"
-                className="bg-dark-blue text-white rounded-[4px] font-[700] text-[14px] px-[20px] py-[10px] mt-[15px]"
-              >
-                Send Message
-              </button>
-            </div>
-          </form>
+          <h1 className="font-[400] text-[22px] text-white leading-[23px]">
+            Shoot me a message!
+          </h1>
+          <p className="font-[350] text-[14px] text-white">
+            I&apos;ll get back to you soon.
+          </p>
         </div>
-      )}
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          className="px-[20px] py-[24px] h-[411px] overflow-y-auto"
+        >
+          <div className="flex flex-col">
+            <label className="font-[500] text-[16px] mb-[10px]">Name</label>
+            <input
+              className="message-input border-[1px] border-black border-solid h-[35px] px-[10px] text-[14px] focus:outline-0 "
+              type="text"
+              {...register("name", {
+                required: true,
+              })}
+            ></input>
+            {errors?.name && (
+              <p className="mt-[5px] text-[14px] text-red-600">
+                This field is required.
+              </p>
+            )}
+          </div>
+          <div className="flex flex-col mt-[11px]">
+            <label className="font-[500] text-[16px] mb-[10px]">Email</label>
+            <input
+              className="message-input border-[1px] border-black border-solid h-[35px] px-[10px] text-[14px] focus:outline-0 "
+              type="text"
+              {...register("email", {
+                required: true,
+                pattern: {
+                  value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                  message: "Invalid email format",
+                },
+              })}
+            />
+            {errors?.email?.message && (
+              <p className="mt-[5px] text-[14px] text-red-600">
+                {errors.email.message as string}
+              </p>
+            )}
+          </div>
+          <div className="flex flex-col mt-[11px]">
+            <label className="font-[500] text-[16px] mb-[10px]">Subject</label>
+            <input
+              className="message-input border-[1px] border-black border-solid h-[35px] px-[10px] text-[14px] focus:outline-0 "
+              type="text"
+              {...register("subject", {
+                required: true,
+              })}
+            ></input>
+            {errors?.subject && (
+              <p className="mt-[5px] text-[14px] text-red-600">
+                This field is required.
+              </p>
+            )}
+          </div>
+          <div className="flex flex-col mt-[11px]">
+            <label className="font-[500] text-[16px] mb-[10px]">Message</label>
+            <textarea
+              className="message-input border-[1px] border-black border-solid px-[10px] text-[14px] focus:outline-0 "
+              rows={5}
+              {...register("message", {
+                required: true,
+              })}
+            ></textarea>
+            {errors?.message && (
+              <p className="mt-[5px] text-[14px] text-red-600">
+                Message is required.
+              </p>
+            )}
+          </div>
+          <div className="w-full text-center my-2">
+            {submitStatus && (
+              <p
+                className={
+                  submitStatus === "success"
+                    ? "text-emerald-500"
+                    : "text-red-500"
+                }
+              >
+                {submitStatus === "success"
+                  ? "Thanks! I'll reach out to you soon :)"
+                  : "An error occured. Please try again later."}
+              </p>
+            )}
+          </div>
+          <div className="flex justify-center">
+            <button
+              type="submit"
+              className={`bg-dark-blue text-white rounded-[4px] font-[700] flex items-center justify-center text-[14px] px-[20px] py-[10px] ${
+                submitStatus ? "mt-2" : "mt-3"
+              }`}
+            >
+              {isLoading && (
+                <span className="flex items-center justify-center mr-2">
+                  <Loading size="w-4" />
+                </span>
+              )}
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+
       <div className="flex justify-end">
         <button
           type="button"
