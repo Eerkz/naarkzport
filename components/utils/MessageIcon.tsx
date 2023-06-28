@@ -57,7 +57,11 @@ export default function MessageIcon() {
       <div
         className={`
         ${
-          openForm ? "pop-up" : "pop-down"
+          openForm === undefined
+            ? ""
+            : openForm === true
+            ? "pop-up"
+            : "pop-down"
         } hidden bg-white rounded-[20px] md:mr-[54px] border-solid md:mb-0 mb-[20px] ${
           theme === "light" ? "border-[1px] border-black" : "dark-shadow"
         }`}
