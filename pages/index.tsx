@@ -61,13 +61,13 @@ export default function Home() {
         <div className="md:mt-[140px]">
           <div className="mb-[51px]">
             <h1 className="font-bold text-[48px] leading-none">
-              Hi, I&apos;m Naarkz.
+              Hi, I&apos;m Name.
             </h1>
             <p className={`font-[300] text-lg leading-tight mt-3`}>
               I&apos;m a skilled front-end engineer with 1 year experience,{" "}
-              <br className="nest:block hidden" />
+              <br className="xl:block hidden" />
               specializing in building full-stack applications{" "}
-              <br className="nest:block hidden" /> using Next.js and Typescript.
+              <br className="xl:block hidden" /> using Next.js and Typescript.
             </p>
           </div>
           <ul className="font-[500] text-[18px] leading-[21px] flex flex-col gap-y-[18px] uppercase">

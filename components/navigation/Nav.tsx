@@ -28,7 +28,7 @@ export default function Nav() {
               theme === "light" ? "text-dark-mode-secondary" : "text-white"
             }`}
           >
-            naarkz.dev
+            name.dev
           </span>
         </div>
         <div className="flex relative">

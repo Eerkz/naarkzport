@@ -19,18 +19,12 @@ export default function Contact() {
         <li id="linkedin" className={`social-icon ${borderStyle}`}>
           <div className="social-inner">
             <div className="social-content social-front">
-              <a
-                href="https://www.linkedin.com/in/wilma-a-0b6576220/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Image
-                  src={"/static/images/social/linkedin.svg"}
-                  alt="linkedin-icon"
-                  width={30}
-                  height={30}
-                />
-              </a>
+              <Image
+                src={"/static/images/social/linkedin.svg"}
+                alt="linkedin-icon"
+                width={30}
+                height={30}
+              />
             </div>
             <div className="social-content social-back">
               <a href="https://linkedin.com" target="_blank" rel="noreferrer">
@@ -47,24 +41,20 @@ export default function Contact() {
         <li id="email" className={`social-icon ${borderStyle}`}>
           <div className="social-inner">
             <div className="social-content social-front">
-              <CopyToClipboard text={"User#6678"}>
-                <Image
-                  src={"/static/images/social/discord.svg"}
-                  alt="discord-icon"
-                  width={30}
-                  height={30}
-                />
-              </CopyToClipboard>
+              <Image
+                src={"/static/images/social/discord.svg"}
+                alt="discord-icon"
+                width={30}
+                height={30}
+              />
             </div>
             <div className="social-content social-back">
-              <CopyToClipboard text={"Naarkz#7945"}>
-                <Image
-                  src={"/static/images/social/copy.svg"}
-                  alt="copy-icon"
-                  width={25}
-                  height={25}
-                />
-              </CopyToClipboard>
+              <Image
+                src={"/static/images/social/copy.svg"}
+                alt="copy-icon"
+                width={25}
+                height={25}
+              />
             </div>
           </div>
         </li>
@@ -81,38 +71,32 @@ export default function Contact() {
               </CopyToClipboard>
             </div>
             <div className="social-content social-back">
-              <CopyToClipboard text={"naark.dev@gmail.com"}>
-                <Image
-                  src={"/static/images/social/copy.svg"}
-                  alt="copy-icon"
-                  width={25}
-                  height={25}
-                />
-              </CopyToClipboard>
+              <Image
+                src={"/static/images/social/copy.svg"}
+                alt="copy-icon"
+                width={25}
+                height={25}
+              />
             </div>
           </div>
         </li>
         <li id="whatsapp" className={`social-icon ${borderStyle}`}>
           <div className="social-inner">
             <div className="social-content social-front">
-              <CopyToClipboard text={"naark.dev@gmail.com"}>
-                <Image
-                  src={"/static/images/social/whatsapp.svg"}
-                  alt="whatsapp-icon"
-                  width={30}
-                  height={30}
-                />
-              </CopyToClipboard>
+              <Image
+                src={"/static/images/social/whatsapp.svg"}
+                alt="whatsapp-icon"
+                width={30}
+                height={30}
+              />
             </div>
             <div className="social-content social-back">
-              <CopyToClipboard text={"naark.dev@gmail.com"}>
-                <Image
-                  src={"/static/images/social/copy.svg"}
-                  alt="copy-icon"
-                  width={25}
-                  height={25}
-                />
-              </CopyToClipboard>
+              <Image
+                src={"/static/images/social/copy.svg"}
+                alt="copy-icon"
+                width={25}
+                height={25}
+              />
             </div>
           </div>
         </li>

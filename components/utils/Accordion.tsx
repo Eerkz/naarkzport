@@ -47,7 +47,9 @@ export default function Accordion({
             : "accordion-content-collapse"
         }`}
       >
-        {children}
+        {
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet ligula elit. Donec sed nulla nec nisl mattis volutpat. Morbi neque odio, rutrum non lacinia eget, sagittis vitae sapien. Morbi odio purus, suscipit venenatis urna quis, egestas ullamcorper massa. In porta suscipit lorem non porta."
+        }
       </div>
     </div>
   );
