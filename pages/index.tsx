@@ -55,16 +55,17 @@ export default function Home() {
 
   return (
     <Main>
-      <aside className="flex flex-col justify-end pl-[12px] md:mt-0 mt-[180px] md:w-[50%] w-full mb:pb-[100px] md:pb-[70px]">
-        <div>
+      <aside className="fixed-container flex flex-col md:w-[40%] w-full md:p-[20px] md:mt-[70px] mt-[180px] md:overflow-scroll lg:mr-[50px]">
+        <div className="md:mt-[140px]">
           <div className="mb-[51px]">
             <h1 className="font-bold text-[48px] leading-none">
               Hi, I&apos;m Naarkz.
             </h1>
             <p className="font-[300] text-lg leading-tight mt-3">
-              I&apos;m a skilled front-end engineer with 1 year experience, <br className="nest:block hidden"/>
-              specializing in building full-stack applications <br className="nest:block hidden"/> using Next.js and
-              Typescript.
+              I&apos;m a skilled front-end engineer with 1 year experience,{" "}
+              <br className="nest:block hidden" />
+              specializing in building full-stack applications{" "}
+              <br className="nest:block hidden" /> using Next.js and Typescript.
             </p>
           </div>
           <ul className="font-[500] text-[18px] leading-[21px] flex flex-col gap-y-[18px] uppercase">
@@ -104,10 +105,9 @@ export default function Home() {
         </div>
       </aside>
       <aside
-        id="projects-container"
         onScroll={handleScroll}
         ref={parentDivRef}
-        className="flex flex-col md:w-[60%] w-full md:p-[20px] md:mt-[70px] mt-[50px] md:overflow-scroll lg:mr-[50px]"
+        className="fixed-container flex flex-col md:w-[60%] w-full md:p-[20px] md:mt-[70px] mt-[50px] md:overflow-scroll lg:mr-[50px]"
       >
         <div
           className="flex flex-col gap-y-[40px] md:pt-[50px]"
