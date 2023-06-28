@@ -27,19 +27,19 @@ export default function MessageIcon() {
   const onSubmit = async (formData: any) => {
     try {
       setIsLoading(true);
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      // const response = await fetch("/api/contact", {
+      //   method: "POST",
+      //   headers: {
+      //     "Content-Type": "application/json",
+      //   },
+      //   body: JSON.stringify(formData),
+      // });
 
-      const data = await response.json();
+      // const data = await response.json();
 
-      if (!response.ok) {
-        throw new Error(data.message);
-      }
+      // if (!response.ok) {
+      //   throw new Error(data.message);
+      // }
       setSubmitStatus("success");
       reset(defaultValues);
     } catch (error: any) {
