@@ -16,11 +16,12 @@ export default function TechBox({
   const { theme } = useTheme();
   return (
     <div
-      className={`${color} tech-box cursor-pointer w-[85px] h-[85px] flex justify-center items-center ${
+      className={`tech-box cursor-pointer w-[85px] h-[85px] flex justify-center items-center ${
         theme === "light"
           ? "border-[1px] tech-box-light border-black"
           : "dark-shadow"
       }`}
+      style={{ backgroundColor: color }}
     >
       {name && (
         <span
