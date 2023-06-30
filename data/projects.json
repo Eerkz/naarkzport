@@ -30,14 +30,14 @@
     "color": "#FF837D",
     "link": "https://www.reddit-archiver.xyz/",
     "title": "reddit-archiver",
-    "description": "An app that allows a reddit user to archive some of their account data, batch saved posts/comments, and batch subscribe to subreddits.",
+    "description": "An app that allows a reddit user to archive some of their account data, batch save posts and comments, and batch subscribe to subreddits.",
     "stack": ["Typescript", "NextJS", "Tailwind"]
   },
   {
     "color": "#ffbf72",
     "link": "https://jeyoecommerce-13lj6lkbz-eerkz.vercel.app/",
     "title": "reddit-archiver",
-    "description": "built the UI and the store search/filtering functionalities using Zustand for state management.",
+    "description": "A simple frontend for an ecommerce application built using Next.js and using zustand for state management.",
     "stack": ["Typescript", "NextJS", "Tailwind", "Zustand"]
   }
 ]
