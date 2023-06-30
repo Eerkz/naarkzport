@@ -1,0 +1,76 @@
+{
+  "icons_base_path": "/static/images/tech_icons",
+  "tech_stack": [
+    {
+      "color": "bg-pastel-violet",
+      "icon": "nextjs.svg",
+      "name": "Next.js"
+    },
+    {
+      "color": "bg-dark-gray",
+      "icon": "mongodb.svg",
+      "name": "MongoDB"
+    },
+    {
+      "color": "bg-dark-gray",
+      "icon": "aws.svg",
+      "name": "Services: S3, EC2, RDS"
+    },
+    {
+      "color": "bg-pastel-yellow",
+      "icon": "react.svg",
+      "name": "React.js"
+    },
+    {
+      "color": "bg-strong-pink",
+      "icon": "redis.svg",
+      "width": 31,
+      "name": "Redis"
+    },
+    {
+      "color": "bg-dark-gray",
+      "icon": "express.svg",
+      "name": "Express.js"
+    },
+    {
+      "color": "bg-pastel-pink",
+      "icon": "jest.svg",
+      "name": "Jest"
+    },
+    {
+      "color": "bg-pastel-turquoise",
+      "icon": "tailwind.svg",
+      "name": "Tailwind"
+    },
+    {
+      "color": "bg-strong-violet",
+      "icon": "firebase.svg",
+      "name": "Firebase"
+    },
+    {
+      "color": "bg-pastel-turquoise",
+      "icon": "typescript.svg",
+      "name": "Typescript"
+    },
+    {
+      "color": "bg-dark-gray",
+      "icon": "docker.svg",
+      "name": "Docker"
+    },
+    {
+      "color": "bg-strong-orange",
+      "icon": "sql.svg",
+      "name": "SQL"
+    },
+    {
+      "color": "bg-pastel-violet",
+      "icon": "git.svg",
+      "name": "Git"
+    },
+    {
+      "color": "bg-pastel-pink",
+      "icon": "php.svg",
+      "name": "PHP"
+    }
+  ]
+}

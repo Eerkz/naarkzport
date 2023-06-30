@@ -1,10 +1,10 @@
 import React, { useState, useRef } from "react";
 import Main from "../components/layouts/Main";
-import ProjectBox from "../components/utils/ProjectBox";
 import TechStack from "../components/layouts/TechStack";
 import Services from "../components/layouts/Services";
 import Contact from "../components/layouts/Contact";
 import { useTheme } from "../store/ThemeContext";
+import Projects from "../components/layouts/Projects";
 
 export default function Home() {
   const { theme } = useTheme();
@@ -131,61 +131,7 @@ export default function Home() {
           className="flex flex-col gap-y-[40px] md:pt-[50px]"
           ref={projectsRef}
         >
-          <ProjectBox
-            link="https://deploy-preview-5--rocketlib-web.netlify.app/"
-            stack={["Typescript", "NextJS", "Tailwind", "Firebase", "Redux"]}
-            title="RocketLib"
-            description="Designed and developed a multi-role platform where users can apply as a learner, volunteer, or sponsor. This includes the creation of various complex forms, specialized dashboards for each user type, and an admin dashboard for managing user applications."
-            color={"#81F4D6"}
-          />{" "}
-          <ProjectBox
-            title="NDA"
-            stack={[
-              "Typescript",
-              "NextJS",
-              "Wordpress",
-              "PHP",
-              "MySQL",
-              "GSAP",
-            ]}
-            description="Designed and implemented custom plugins and themes in WordPress and leveraged it as a headless CMS for a Next.js front-end. Extended the Gutenberg editor, built with React.js and Redux, by creating multiple complex forms within the editor. Customized WordPress's default admin dashboard and created several custom admin pages with custom roles and access. Additionally, developed additional protected endpoints in the WordPress API to be used by the Next.js frontend. Integrated Stripe payment in the frontend and WordPress admin to allow users to purchase products and gain additional access to protected resources."
-            color={"#96A7FF"}
-          />
-          <ProjectBox
-            title="TechcoPH"
-            link="https://deploy-preview-2--sparkling-belekoy-f645ab.netlify.app/"
-            description="Built a user-friendly website that lists registered companies in the Philippines with relevant details valuable for job seekers. This dynamic platform has a flexible filtering system allowing users to stack multiple filters to refine their company search. Another feature allows companies to submit their information to be included in the database."
-            stack={["Typescript", "NextJS", "Tailwind", "Airtable", "Redis"]}
-            color={"#FFBF72"}
-          />
-          <ProjectBox
-            title="TechcoTours"
-            link="https://feature-landing--wondrous-treacle-8d6d47.netlify.app/"
-            description="Designed and developed a web application that helps job seekers explore different companies and for companies to showcase their workplace to potential candidates. Features include several functional dashboards as follows: (1) Job-seeker dashboard for resume management, company catalog browsing, and event registration; (2) Employer dashboard for company page creation, job listing, and event scheduling; (3) Admin dashboard for data management. "
-            stack={[
-              "Typescript",
-              "NextJS",
-              "Tailwind",
-              "Firebase",
-              "Redis",
-              "Redux",
-            ]}
-            color={"#eaedff"}
-          />
-          <ProjectBox
-            title="reddit-archiver"
-            link="https://www.reddit-archiver.xyz/"
-            description="an app that allows a reddit user to archive some of their account data, batch saved posts/comments, and batch subscribe to subreddits."
-            stack={["Typescript", "NextJS", "Tailwind"]}
-            color={"#FF837D"}
-          />
-          <ProjectBox
-            title="jeyocommerce"
-            link="https://jeyoecommerce-13lj6lkbz-eerkz.vercel.app/"
-            description="built the UI and the store search/filtering functionalities using Zustand for state management."
-            stack={["Typescript", "NextJS", "Tailwind", "Zustand"]}
-            color={"#ffbf72"}
-          />
+          <Projects />
         </div>
         <div ref={techRef} className="pt-[60px]">
           <TechStack />

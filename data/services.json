@@ -1,0 +1,26 @@
+[
+  {
+    "heading": "What services do i offer?",
+    "content": "<ul class=\"list-disc pl-4\"> <li> <span class=\"font-bold\">UI Development</span> <p> Build the website&apos; UI using a variety of editing tools such as Figma and Photoshop. </p> </li> <li> <span class=\"font-bold\">Frontend Development</span> <p>Implementation of graphic design and UI elements</p> </li> <li> <span class=\"font-bold\">Headless Content Management</span> <p>Customing an existing CMS platform that best works for you.</p> </li> <li> <span class=\"font-bold\">Backend Development</span> <p>Server-side logic, database and API development.</p> </li> </ul>"
+  },
+  {
+    "heading": "How long does a project take?",
+    "content": "Depends on the project. A typical one-page site could take 1-2 weeks depending on the complexity of the design. Bigger projects could take months."
+  },
+  {
+    "heading": "Will the website be responsive?",
+    "content": "Yes, it&apos; standard for all website to be mobile responsive nowaways :)"
+  },
+  {
+    "heading": "Who pays for hosting, domain, etc.?",
+    "content": "<p> This will depend on you. Most clients would prefer that these costs would be included as operations cost (with additional maintenance cost!) that I will charge to you. However, if you prefer to manage your own hosting and domain, then we can surely arrange that :) </p>"
+  },
+  {
+    "heading": "How often do I update?",
+    "content": "<p>I will be regularly updating you weekly. </p>"
+  },
+  {
+    "heading": "How does the payment work? What's the rate?",
+    "content": "<p> Rate will depend on the project&apos; complexity. My rate usually goes for $10-$15/hr. However, a one time payment could also be arranged. A single page for a static site would cost $150-$200 depending on the complexity of the page. </p> <p> Available payment methods include Paypal, Gcash, and Direct Bank Transfer. </p>"
+  }
+]

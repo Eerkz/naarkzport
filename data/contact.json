@@ -1,0 +1,22 @@
+[
+  {
+    "name": "linkedin",
+    "icon": "/static/images/social/linkedin.svg",
+    "copy": "https://www.linkedin.com/in/wilma-a-0b6576220/"
+  },
+  {
+    "name": "discord",
+    "icon": "/static/images/social/discord.svg",
+    "copy": "Naarkz#7945"
+  },
+  {
+    "name": "email",
+    "icon": "/static/images/social/email.svg",
+    "copy": "wcalemios@gmail.com"
+  },
+  {
+    "name": "whatsapp",
+    "icon": "/static/images/social/whatsapp.svg",
+    "copy": "+639489896554"
+  }
+]

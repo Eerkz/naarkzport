@@ -1,0 +1,43 @@
+[
+  {
+    "color": "#81F4D6",
+    "link": "https://deploy-preview-5--rocketlib-web.netlify.app/",
+    "title": "RocketLib",
+    "description": "Designed and developed a multi-role platform where users can apply as a learner, volunteer, or sponsor. This includes the creation of various complex forms, specialized dashboards for each user type, and an admin dashboard for managing user applications.",
+    "stack": ["Typescript", "NextJS", "Tailwind", "Firebase", "Redux"]
+  },
+  {
+    "color": "#96A7FF",
+    "title": "NDA",
+    "description": "Designed and implemented custom plugins and themes in WordPress and leveraged it as a headless CMS for a Next.js front-end. Extended the Gutenberg editor, built with React.js and Redux, by creating multiple complex forms within the editor. Customized WordPress's default admin dashboard and created several custom admin pages with custom roles and access. Additionally, developed additional protected endpoints in the WordPress API to be used by the Next.js frontend. Integrated Stripe payment in the frontend and WordPress admin to allow users to purchase products and gain additional access to protected resources.",
+    "stack": ["Typescript", "NextJS", "Wordpress", "PHP", "MySQL", "GSAP"]
+  },
+  {
+    "color": "#FFBF72",
+    "link": "https://deploy-preview-2--sparkling-belekoy-f645ab.netlify.app/",
+    "title": "TechcoPH",
+    "description": "Built a user-friendly website that lists registered companies in the Philippines with relevant details valuable for job seekers. This dynamic platform has a flexible filtering system allowing users to stack multiple filters to refine their company search. Another feature allows companies to submit their information to be included in the database.",
+    "stack": ["Typescript", "NextJS", "Tailwind", "Airtable", "Redis"]
+  },
+  {
+    "color": "#eaedff",
+    "link": "https://feature-landing--wondrous-treacle-8d6d47.netlify.app/",
+    "title": "TechcoTours",
+    "description": "Designed and developed a web application that helps job seekers explore different companies and for companies to showcase their workplace to potential candidates. Features include several functional dashboards as follows: (1) Job-seeker dashboard for resume management, company catalog browsing, and event registration; (2) Employer dashboard for company page creation, job listing, and event scheduling; (3) Admin dashboard for data management.",
+    "stack": ["Typescript", "NextJS", "Tailwind", "Firebase", "Redis", "Redux"]
+  },
+  {
+    "color": "#FF837D",
+    "link": "https://www.reddit-archiver.xyz/",
+    "title": "reddit-archiver",
+    "description": "An app that allows a reddit user to archive some of their account data, batch saved posts/comments, and batch subscribe to subreddits.",
+    "stack": ["Typescript", "NextJS", "Tailwind"]
+  },
+  {
+    "color": "#ffbf72",
+    "link": "https://jeyoecommerce-13lj6lkbz-eerkz.vercel.app/",
+    "title": "reddit-archiver",
+    "description": "built the UI and the store search/filtering functionalities using Zustand for state management.",
+    "stack": ["Typescript", "NextJS", "Tailwind", "Zustand"]
+  }
+]

@@ -33,7 +33,7 @@ export default function TechBox({
       )}
       {icon && (
         <Image
-          src={`/static/images/tech_icons/${icon}`}
+          src={icon}
           alt="tech-stack-item-icon"
           width={width ? width : 41}
           height={width ? width : 41}
