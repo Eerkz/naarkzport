@@ -53,11 +53,6 @@
       "name": "Typescript"
     },
     {
-      "color": "#C7C7CB",
-      "icon": "docker.svg",
-      "name": "Docker"
-    },
-    {
       "color": "#ffbf72",
       "icon": "sql.svg",
       "name": "SQL"

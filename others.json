@@ -1,0 +1,16 @@
+[
+  {
+    "color": "#FFBF72",
+    "link": "https://deploy-preview-2--sparkling-belekoy-f645ab.netlify.app/",
+    "title": "TechcoPH",
+    "description": "Built a user-friendly website that lists registered companies in the Philippines with relevant details valuable for job seekers. This dynamic platform has a flexible filtering system allowing users to stack multiple filters to refine their company search. Another feature allows companies to submit their information to be included in the database.",
+    "stack": ["Typescript", "NextJS", "Tailwind", "Airtable", "Redis"]
+  },
+  {
+    "color": "#eaedff",
+    "link": "https://feature-landing--wondrous-treacle-8d6d47.netlify.app/",
+    "title": "TechcoTours",
+    "description": "Designed and developed a web application that helps job seekers explore different companies and for companies to showcase their workplace to potential candidates. Features include several functional dashboards as follows: (1) Job-seeker dashboard for resume management, company catalog browsing, and event registration; (2) Employer dashboard for company page creation, job listing, and event scheduling; (3) Admin dashboard for data management.",
+    "stack": ["Typescript", "NextJS", "Tailwind", "Firebase", "Redis", "Redux"]
+  }
+]
