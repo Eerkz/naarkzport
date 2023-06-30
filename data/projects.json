@@ -36,7 +36,7 @@
   {
     "color": "#ffbf72",
     "link": "https://jeyoecommerce-13lj6lkbz-eerkz.vercel.app/",
-    "title": "reddit-archiver",
+    "title": "jeyocommerce",
     "description": "A simple frontend for an ecommerce application built using Next.js and using zustand for state management.",
     "stack": ["Typescript", "NextJS", "Tailwind", "Zustand"]
   }
