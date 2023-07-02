@@ -13,6 +13,18 @@
     "stack": ["Typescript", "NextJS", "Wordpress", "PHP", "MySQL", "GSAP"]
   },
   {
+    "color": "#FFBF72",
+    "title": "NDA",
+    "description": "Built a user-friendly website that lists registered companies in the Philippines with relevant details valuable for job seekers. This dynamic platform has a flexible filtering system allowing users to stack multiple filters to refine their company search. Another feature allows companies to submit their information to be included in the database.",
+    "stack": ["Typescript", "NextJS", "Tailwind", "Airtable", "Redis"]
+  },
+  {
+    "color": "#eaedff",
+    "title": "NDA",
+    "description": "Designed and developed a web application that helps job seekers explore different companies and for companies to showcase their workplace to potential candidates. Features include several functional dashboards as follows: (1) Job-seeker dashboard for resume management, company catalog browsing, and event registration; (2) Employer dashboard for company page creation, job listing, and event scheduling; (3) Admin dashboard for data management.",
+    "stack": ["Typescript", "NextJS", "Tailwind", "Firebase", "Redis", "Redux"]
+  },
+  {
     "color": "#FF837D",
     "link": "https://www.reddit-archiver.xyz/",
     "title": "reddit-archiver",
