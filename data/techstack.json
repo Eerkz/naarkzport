@@ -22,7 +22,12 @@
       "name": "React.js"
     },
     {
-      "color":  "#ff837d",
+      "color": "#ffbf72",
+      "icon": "postgresql.svg",
+      "name": "Postgresql"
+    },
+    {
+      "color": "#ff837d",
       "icon": "redis.svg",
       "width": 31,
       "name": "Redis"
