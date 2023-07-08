@@ -5,22 +5,14 @@
   },
   {
     "heading": "How long does a project take?",
-    "content": "Depends on the project. A typical one-page site could take 1-2 weeks depending on the complexity of the design. Bigger projects could take months."
-  },
-  {
-    "heading": "Will the website be responsive?",
-    "content": "Yes, it&apos; standard for all website to be mobile responsive nowaways :)"
+    "content": "The duration of the project will depend on its complexity. For a typical one-page site, it could take approximately 1-2 weeks, taking into account the complexity of the design. However, for larger projects, the timeline can extend to several months to ensure thorough completion."
   },
   {
     "heading": "Who pays for hosting, domain, etc.?",
-    "content": "<p> This will depend on you. Most clients would prefer that these costs would be included as operations cost (with additional maintenance cost!) that I will charge to you. However, if you prefer to manage your own hosting and domain, then we can surely arrange that :) </p>"
-  },
-  {
-    "heading": "How often do I update?",
-    "content": "<p>I will be regularly updating you weekly. </p>"
+    "content": "<p> This will depend on your preference. Most clients prefer to have these costs included as operational costs (along with additional maintenance costs), which I would charge to you. However, if you prefer to manage your own hosting and domain, we can certainly make arrangements accordingly.</p>"
   },
   {
     "heading": "How does the payment work? What's the rate?",
-    "content": "<p> Rate will depend on the project&apos; complexity. My rate usually goes for $10-$15/hr. However, a one time payment could also be arranged. A single page for a static site would cost $150-$200 depending on the complexity of the page. </p> <p> Available payment methods include Paypal, Gcash, and Direct Bank Transfer. </p>"
+    "content": "<p>The rate will depend on the complexity of the project. Typically, my rate ranges from $10 to $15 per hour. However, we can also discuss the possibility of a one-time payment. For a single page on a static site, the cost would be between $150 and $200, depending on the complexity of the page. Payment methods available include PayPal, Gcash, and Direct Bank Transfer. </p>"
   }
 ]
