@@ -32,6 +32,13 @@
     "stack": ["Typescript", "NextJS", "Tailwind"]
   },
   {
+    "color": "#81F4D6",
+    "link": "https://github.com/Eerkz/PSGC-scraper",
+    "title": "PSGC-scraper",
+    "description": "A Python script to scrape, download, and convert the Philippine Standard Geographic Codes (PSGC) data into CSV and JSON formats for easy access and integration.",
+    "stack": ["Python3", "BeautifulSoup", "Pandas"]
+  },
+  {
     "color": "#ffbf72",
     "link": "https://jeyoecommerce-13lj6lkbz-eerkz.vercel.app/",
     "title": "jeyocommerce",
