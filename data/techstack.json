@@ -68,6 +68,11 @@
       "name": "Git"
     },
     {
+      "color": "#e6fdf7",
+      "icon": "python.svg",
+      "name": "Python3"
+    },
+    {
       "color": "#ffd6d4",
       "icon": "php.svg",
       "name": "PHP"
