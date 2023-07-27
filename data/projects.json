@@ -1,7 +1,6 @@
 [
   {
     "color": "#81F4D6",
-    "link": "https://deploy-preview-5--rocketlib-web.netlify.app/",
     "title": "RocketLib",
     "description": "Designed and developed a multi-role platform where users can apply as a learner, volunteer, or sponsor. This includes the creation of various complex forms, specialized dashboards for each user type, and an admin dashboard for managing user applications.",
     "stack": ["Typescript", "NextJS", "Tailwind", "Firebase", "Redux"]
