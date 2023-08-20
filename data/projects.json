@@ -6,12 +6,6 @@
     "stack": ["Typescript", "NextJS", "Tailwind", "Firebase", "Redux"]
   },
   {
-    "color": "#96A7FF",
-    "title": "NDA",
-    "description": "Designed and implemented custom plugins and themes in WordPress and leveraged it as a headless CMS for a Next.js front-end. Extended the Gutenberg editor, built with React.js and Redux, by creating multiple complex forms within the editor. Customized WordPress's default admin dashboard and created several custom admin pages with custom roles and access. Additionally, developed additional protected endpoints in the WordPress API to be used by the Next.js frontend. Integrated Stripe payment in the frontend and WordPress admin to allow users to purchase products and gain additional access to protected resources.",
-    "stack": ["Typescript", "NextJS", "Wordpress", "PHP", "MySQL", "GSAP"]
-  },
-  {
     "color": "#FFBF72",
     "title": "NDA",
     "description": "Built a user-friendly website that lists registered companies in the Philippines with relevant details valuable for job seekers. This dynamic platform has a flexible filtering system allowing users to stack multiple filters to refine their company search. Another feature allows companies to submit their information to be included in the database.",
