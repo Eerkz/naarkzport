@@ -18,18 +18,26 @@
     "stack": ["Typescript", "NextJS", "Tailwind", "Firebase", "Redis", "Redux"]
   },
   {
+    "color": "#FFBF72",
+    "title": "NDA",
+    "description": "Built an app where users can join as guest or registered user to posted activities. Developed and designed the PostgreSQL database using Supabase including creation of several row-level-security policies and functions to ensure data integrity; Developed a token-based payment flow that allows users to continue a payment flow at a later time.",
+    "stack": [
+      "NextJS",
+      "Typescript",
+      "TailwindCSS",
+      "Jest and RTL",
+      "Supabase PostgreSQL",
+      "AWS S3"
+    ]
+  },
+  {
     "color": "#FF837D",
     "link": "https://www.reddit-archiver.xyz/",
     "title": "reddit-archiver",
     "description": "An app that allows a reddit user to archive some of their account data, batch save posts and comments, and batch subscribe to subreddits.",
     "stack": ["Typescript", "NextJS", "Tailwind"]
   },
-  {
-    "color": "#81F4D6",
-    "title": "NDA",
-    "description": "Built an app where users can join as guest or registered user to posted activities. Developed and designed the PostgreSQL database using Supabase including creation of several row-level-security policies and functions to ensure data integrity; Developed a token-based payment flow that allows users to continue a payment flow at a later time.",
-    "stack": ["NextJS", "Typescript", "TailwindCSS","Jest and RTL", "Supabase PostgreSQL", "AWS S3"]
-  },
+
   {
     "color": "#81F4D6",
     "link": "https://github.com/Eerkz/PSGC-scraper",
