@@ -7,19 +7,19 @@
   },
   {
     "color": "#FFBF72",
-    "title": "NDA",
+    "title": "PH Tech Companies Catalog Platform",
     "description": "Built a user-friendly website that lists registered companies in the Philippines with relevant details valuable for job seekers. This dynamic platform has a flexible filtering system allowing users to stack multiple filters to refine their company search. Another feature allows companies to submit their information to be included in the database.",
     "stack": ["Typescript", "NextJS", "Tailwind", "Airtable", "Redis"]
   },
   {
     "color": "#eaedff",
-    "title": "NDA",
+    "title": "Career Explorer Platform",
     "description": "Designed and developed a web application that helps job seekers explore different companies and for companies to showcase their workplace to potential candidates. Features include several functional dashboards as follows: (1) Job-seeker dashboard for resume management, company catalog browsing, and event registration; (2) Employer dashboard for company page creation, job listing, and event scheduling; (3) Admin dashboard for data management.",
     "stack": ["Typescript", "NextJS", "Tailwind", "Firebase", "Redis", "Redux"]
   },
   {
     "color": "#FFBF72",
-    "title": "NDA",
+    "title": "Event Hub Platform",
     "description": "Built an app where users can join as guest or registered user to posted activities. Developed and designed the PostgreSQL database using Supabase including creation of several row-level-security policies and functions to ensure data integrity; Developed a token-based payment flow that allows users to continue a payment flow at a later time.",
     "stack": [
       "NextJS",
@@ -28,6 +28,29 @@
       "Jest and RTL",
       "Supabase PostgreSQL",
       "AWS S3"
+    ]
+  },
+  {
+    "color": "#eaedff",
+    "title": "Security Organization Website",
+    "description": "Designed and developed the Security Organization Website, featuring custom WordPress plugins and themes, enhanced Gutenberg editor with React.js for complex forms, and specialized admin pages with access controls. Integrated additional REST API endpoints for seamless communication with the Next.js frontend and incorporated Stripe payment for streamlined transactions and secure resource access",
+    "stack": [
+      "NextJS",
+      "Typescript",
+      "TailwindCSS",
+      "Wordpress",
+      "PHP",
+      "Stripe",
+      "GSAP"
+    ]
+  },
+  {
+    "color": "#FFBF72",
+    "title": "Films Catalog Platform",
+    "description": "Enhanced the platform by introducing new pages and components, along with developing a language switching feature for improved accessibility. Successfully diagnosed and resolved multiple UI bugs, resulting in a 30% boost in the Lighthouse performance score and an overall enhanced user experience. Implemented the React Context API to reduce code redundancy by 20%, optimizing the project's codebase. Streamlined data sharing across relevant pages and components, eliminating loading times and ensuring a seamless user interface.",
+    "stack": [
+      "React.js",
+      "SCSS"
     ]
   },
   {
