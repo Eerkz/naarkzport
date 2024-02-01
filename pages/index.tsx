@@ -64,8 +64,8 @@ export default function Home() {
               Hi, I&apos;m Naarkz.
             </h1>
             <p className={`font-[300] text-lg leading-tight mt-3`}>
-              I&apos;m a skilled front-end engineer with 1 year experience,{" "}
-              <br className="nest:block hidden" />
+              I&apos;m a skilled front-end engineer with 2 years of experience,{" "}
+              {/* <br className="nest:block hidden" /> */}
               specializing in building full-stack applications{" "}
               <br className="nest:block hidden" /> using Next.js and Typescript.
             </p>
